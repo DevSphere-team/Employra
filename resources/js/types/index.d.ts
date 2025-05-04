@@ -6,9 +6,9 @@ export interface Auth {
 }
 
 export interface BreadcrumbItem {
-    title: string;
+    title: ReactNode;  // Ganti 'string' dengan 'ReactNode'
     href: string;
-}
+  }
 
 export interface NavGroup {
     title: string;

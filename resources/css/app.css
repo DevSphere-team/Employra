@@ -148,6 +148,28 @@
     --sidebar-ring: oklch(0.439 0 0);
 }
 
+/* Styling untuk PhoneInput agar mirip MUI TextField */
+.PhoneInput {
+    width: 100%;
+  }
+  
+  .PhoneInputInput {
+    width: 100%;
+    padding: 16.5px 14px;
+    font-size: 16px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    transition: border-color 0.3s ease;
+  }
+  
+  .PhoneInputInput:focus {
+    border-color: #1976d2; /* MUI primary color */
+    box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2); /* MUI focus effect */
+  }
+  
+
 @layer base {
     * {
         @apply border-border;
